@@ -8,7 +8,8 @@ export const BlockContexProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await axios.get(`http://localhost:5000/`)
+      // await axios.get(`http://localhost:5000/`)
+      await axios.get(`https://moveo-mayabyle.onrender.com`)
         .then((res) => setCodeBlocks(res.data))
         .catch((err) => console.log(err))
     };
