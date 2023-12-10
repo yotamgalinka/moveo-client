@@ -75,7 +75,7 @@ function CodeBlockPage() {
   const handleSave = () => {
     ws.send(JSON.stringify({ type: 'save', code: code, id: codeBlockId }));
     alert("Saved");
-    window.location.reload();
+    // window.location.reload();
   }
   
   if (!codeBlocks.length) {
