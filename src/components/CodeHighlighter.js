@@ -16,7 +16,7 @@ const CodeHighlighter = ({ code }) => {
     }, [code]);
 
     return (
-        <pre style={{width: '71vw'}}>
+        <pre>
             <code ref={codeRef} className={`language-javascript`}>
                 {code}
             </code>

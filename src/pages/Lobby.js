@@ -12,11 +12,11 @@ function Lobby() {
             <ul className="blocksList">
                 {codeBlocks.map((block, index) => (
                     <li key={index}> 
-                        <Link className="blockLink" to={`/code/${index+1}`}>{block.title}</Link>
+                        <Link className="link" to={`/code/${index+1}`}>{block.title}</Link>
                     </li> 
                 ))}
             </ul>
-            <div className='footer'>Have a nice learning process, Maya ♥☻</div>
+            <div className='footer'>Have a nice learning process ♥☻</div>
         </div>
     );
 };
