@@ -16,7 +16,8 @@ function CodeBlockPage() {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:5000');
+    // const socket = new WebSocket('ws://localhost:5000');
+    const socket = new WebSocket('wss://moveo-api-mayabyle.onrender.com');
 
     socket.addEventListener('open', () => {  //The 'open' event is fired when the WebSocket connection is successfully established
       console.log('Connected to WebSocket');
