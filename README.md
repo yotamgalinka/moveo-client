@@ -27,3 +27,7 @@ To run the app locally, follow these steps:
 4. Activate the client using the command `npm start`.
 
 The application will be accessible at [http://localhost:3000](http://localhost:3000).
+
+
+https://github.com/mayabyle/Moveo-client/assets/92683872/f1b7fb71-a675-4b96-9d9f-353a34ca4f9a
+
