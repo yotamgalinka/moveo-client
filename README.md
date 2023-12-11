@@ -24,9 +24,12 @@ To run the app locally, follow these steps:
 1. Clone the client and server repositories.
 2. Run `npm install` command for each repository.
 3. Activate the server using the command `npm start`.
-4. Activate the client using the command `npm start`.
+4. In the following files, update the path to match the local environment:
+   src/context/blockContext.js
+   src/pages/CodeBlockPage.js
+5. Activate the client using the command `npm start`.
 
-The application will be accessible at [http://localhost:3000](http://localhost:3000).
+The application will be accessible at [http://localhost:5000](http://localhost:5000).
 
 
 https://github.com/mayabyle/Moveo-client/assets/92683872/f1b7fb71-a675-4b96-9d9f-353a34ca4f9a
