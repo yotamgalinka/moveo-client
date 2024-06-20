@@ -16,7 +16,6 @@ function Lobby() {
                     </li> 
                 ))}
             </ul>
-            <div className='footer'>Have a nice learning process ♥☻</div>
         </div>
     );
 };

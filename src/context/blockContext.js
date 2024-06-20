@@ -7,7 +7,8 @@ export const BlockContexProvider = ({ children }) => {
   const [codeBlocks, setCodeBlocks] = useState([]);  
 
   useEffect(() => {
-    const path = `https://moveo-api-mayabyle.onrender.com`   // to run locally: `http://localhost:5000/`
+    const path = `http://localhost:5000/`
+    // const path = `https://moveo-api-mayabyle.onrender.com`   // to run locally: `http://localhost:5000/`
     const fetchData = async () => {
       await axios.get(path)
         .then((res) => setCodeBlocks(res.data))

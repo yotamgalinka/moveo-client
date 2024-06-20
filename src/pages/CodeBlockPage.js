@@ -18,8 +18,8 @@ function CodeBlockPage() {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    // const socket = new WebSocket('ws://localhost:5000');
-    const socket = new WebSocket('wss://moveo-api-mayabyle.onrender.com');
+    const socket = new WebSocket('ws://localhost:5000');
+    // const socket = new WebSocket('wss://moveo-api-mayabyle.onrender.com');
 
     socket.addEventListener('open', () => { 
       console.log('Connected to WebSocket');
@@ -68,7 +68,7 @@ function CodeBlockPage() {
     if(cleanCode === answer) {
       setIsFinished(true)
     } else {
-      alert("Not done yet...\ndon't worry you're getting close :)")
+      alert("you are really close..")
     }
   }
 
