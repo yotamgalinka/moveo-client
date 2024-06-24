@@ -19,7 +19,8 @@ function CodeBlockPage() {
 
   useEffect(() => {
     // const socket = new WebSocket('ws://localhost:5000');
-    const socket = new WebSocket('ws://moveo-server-yotamgalinka.up.railway.app/');
+    // const socket = new WebSocket('ws://moveo-server-yotamgalinka.up.railway.app/');
+    const socket = new WebSocket('ws://moveo-server-yotamgalinka.vercel.app/');
 
     socket.addEventListener('open', () => { 
       console.log('Connected to WebSocket');
