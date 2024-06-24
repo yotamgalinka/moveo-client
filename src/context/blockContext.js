@@ -7,9 +7,8 @@ export const BlockContexProvider = ({ children }) => {
   const [codeBlocks, setCodeBlocks] = useState([]);  
 
   useEffect(() => {
-    // const path = `http://localhost:5000/` 
-    //const path = `https://moveo-server-yotamgalinka.up.railway.app/`
-    const path = `https://moveo-server-yotamgalinka.vercel.app/`
+    //const path = `http://localhost:5000/` 
+    const path = `https://moveo-server-production-yotam.up.railway.app/`
     const fetchData = async () => {
       await axios.get(path)
         .then((res) => setCodeBlocks(res.data))
