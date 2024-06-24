@@ -18,8 +18,8 @@ function CodeBlockPage() {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:5000');
-    // const socket = new WebSocket('wss://moveo-api-mayabyle.onrender.com');
+    // const socket = new WebSocket('ws://localhost:5000');
+    const socket = new WebSocket('ws://moveo-server-yotamgalinka.up.railway.app/');
 
     socket.addEventListener('open', () => { 
       console.log('Connected to WebSocket');
@@ -47,6 +47,10 @@ function CodeBlockPage() {
 
     socket.addEventListener('close', () => {
       console.log('Disconnected from WebSocket');
+    });
+    // ************************
+    socket.addEventListener('error', (error) => {
+      console.error('WebSocket error:', error);
     });
 
     setWs(socket);
